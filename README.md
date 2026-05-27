@@ -48,11 +48,6 @@ English / [简体中文](./README_CN.md)
 
 ## 🥳 Cheer for NextChat iOS Version Online!
 
-
-> [👉 Click Here to Install Now](https://apps.apple.com/us/app/nextchat-ai/id6743085599)
-
-> [❤️ Source Code Coming Soon](https://github.com/ChatGPTNextWeb/NextChat-iOS)
-
 ![Github iOS Image](https://github.com/user-attachments/assets/e0aa334f-4c13-4dc9-8310-e3b09fa4b9f3)
 
 ## 🫣 NextChat Support MCP !
