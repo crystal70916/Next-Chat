@@ -22,7 +22,7 @@ const en: LocaleType = {
     Return: "Return",
     Title: "Need Access Code",
     Tips: "Please enter access code below",
-    SubTips: "Or enter your OpenAI or Google API Key",
+    SubTips: "Or enter your OpenAI, Google API Key or Anthropic API Key",
     Input: "access code",
     Confirm: "Confirm",
     Later: "Later",
@@ -369,7 +369,7 @@ const en: LocaleType = {
           Title: "Anthropic API Key",
           SubTitle:
             "Use a custom Anthropic Key to bypass password access restrictions",
-          Placeholder: "Anthropic API Key",
+          Placeholder: "Enter your Anthropic API Key",
         },
 
         Endpoint: {
@@ -541,6 +541,17 @@ const en: LocaleType = {
         GoogleSafetySettings: {
           Title: "Google Safety Settings",
           SubTitle: "Select a safety filtering level",
+        },
+      },
+      AI302: {
+        ApiKey: {
+          Title: "302.AI API Key",
+          SubTitle: "Use a custom 302.AI API Key",
+          Placeholder: "302.AI API Key",
+        },
+        Endpoint: {
+          Title: "Endpoint Address",
+          SubTitle: "Example: ",
         },
       },
     },
