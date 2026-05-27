@@ -43,7 +43,9 @@ English / [简体中文](./README_CN.md)
 
 [302.AI](https://302.ai/) is a pay-as-you-go AI application platform that offers the most comprehensive AI APIs and online applications available.
 
+
 ## 🥳 Cheer for NextChat iOS Version Online!
+
 
 > [👉 Click Here to Install Now](https://apps.apple.com/us/app/nextchat-ai/id6743085599)
 
