@@ -18,6 +18,8 @@ import {
   trackSettingsPageGuideToCPaymentClick,
   trackAuthorizationPageButtonToCPaymentClick,
 } from "../utils/auth-settings-events";
+import clsx from "clsx";
+
 const storage = safeLocalStorage();
 
 export function AuthPage() {
@@ -34,6 +36,8 @@ export function AuthPage() {
     accessStore.update((access) => {
       access.openaiApiKey = "";
       access.accessCode = "";
+      access.googleApiKey = "";
+      access.anthropicApiKey = "";
     });
   }; // Reset access code to empty string
 
@@ -54,7 +58,7 @@ export function AuthPage() {
           onClick={() => navigate(Path.Home)}
         ></IconButton>
       </div>
-      <div className={`no-dark ${styles["auth-logo"]}`}>
+      <div className={clsx("no-dark", styles["auth-logo"])}>
         <BotIcon />
       </div>
 
@@ -101,6 +105,17 @@ export function AuthPage() {
             onChange={(e) => {
               accessStore.update(
                 (access) => (access.googleApiKey = e.currentTarget.value),
+              );
+            }}
+          />
+          <input
+            className={styles["auth-input"]}
+            type="password"
+            placeholder={Locale.Settings.Access.Anthropic.ApiKey.Placeholder}
+            value={accessStore.anthropicApiKey}
+            onChange={(e) => {
+              accessStore.update(
+                (access) => (access.anthropicApiKey = e.currentTarget.value),
               );
             }}
           />
@@ -163,7 +178,7 @@ function TopBanner() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className={`${styles["top-banner-inner"]} no-dark`}>
+      <div className={clsx(styles["top-banner-inner"], "no-dark")}>
         <Logo className={styles["top-banner-logo"]}></Logo>
         <span>
           {Locale.Auth.TopTips}
